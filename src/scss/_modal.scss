@@ -1,0 +1,55 @@
+.modal-background {
+  background-color: transparentize(#6bd3c8, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  display: none;
+  &.open {
+    display: block;
+  }
+}
+
+.modal {
+  display: none;
+  z-index: 999;
+  background-color: #49ffc5;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+
+  &.open {
+    display: block;
+    box-shadow: #49ffc5 10px 15px 10px;
+  }
+}
+
+.modal-html-content {
+  display: none;
+  text-align: center;
+}
+#item-image{
+  background-color: yellow;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+.accept-button {
+  background-color: slategrey;
+  width: 250px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.cancel-button {
+  background-color: firebrick;
+  width: 250px;
+  font-weight: bold;
+  border-radius: 15px;
+}

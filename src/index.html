@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklepik</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<table id="user-table">
+    <thead>
+    <tr>
+        <th>Nazwa</th>
+        <th>Cena</th>
+        <th>Ilość</th>
+        <th>Usuń</th>
+        <th>Edytuj</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<button id="add-item">Dodaj element</button>
+<div id="edit-modal" class="modal">
+    <form id="new-item-form">
+        <input type="text" id="name" placeholder="Nazwa artykułu" required>
+        <input type="number" id="price" placeholder="Cena" required>
+        <input type="number" id="count" placeholder="Ilość" required>
+        <input type="file" id="item-image" accept="image/*" placeholder="Obrazek" required>
+    </form>
+</div>
+<script src="script.js" type="module"></script>
+</body>
+</html>

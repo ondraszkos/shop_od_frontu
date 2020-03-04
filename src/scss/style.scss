@@ -1,0 +1,27 @@
+@import "modal";
+
+body {
+  background-color: #fff8ba;
+
+}
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  font-weight: bold;
+  & button{
+    background-color: orange;
+    font-weight: bold;
+  }
+
+}
+#add-item {
+  background-color: chartreuse;
+  font-weight: bold;
+  width: 80px;
+  border-radius: 15px;
+}
+
+
